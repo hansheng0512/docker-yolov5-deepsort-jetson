@@ -24,4 +24,5 @@ RUN cd opencv-python && python3.8 -m pip wheel . --verbose && find . -name "open
 # yolo + deepsort repo
 RUN git clone --recurse-submodules https://github.com/hansheng0512/Yolov5_DeepSort_Pytorch.git
 RUN cd Yolov5_DeepSort_Pytorch && python3.8 -m pip install -r requirements.txt
+RUN gdown https://drive.google.com/uc?id=1O8dUABtFN_wuuQOuz0L_p_2CLXeUcsjQ
 WORKDIR /Yolov5_DeepSort_Pytorch
